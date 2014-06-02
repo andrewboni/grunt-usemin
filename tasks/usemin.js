@@ -14,7 +14,9 @@ var getFlowFromConfig = function (config, target) {
   var flow = new Flow({
     steps: {
       js: ['concat', 'uglifyjs'],
-      css: ['concat', 'cssmin']
+      css: ['concat', 'cssmin'],
+      jsjade: ['concat', 'uglifyjs'],
+      cssjade: ['concat', 'cssmin']
     },
     post: {}
   });
