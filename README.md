@@ -51,10 +51,11 @@ Blocks are expressed as:
 <!-- endbuild -->
 ```
 
-* **type**: either `js` or `css`
- * If another type, the block will be ignored.  Useful for "development only" blocks that won't appear in your build
+* **type**: `js`, `css`, `jsjade`, or `cssjade`
+ * If any another type, the block will be ignored.  Useful for "development only" blocks that won't appear in your build
 * **alternate search path**: (optional) By default the input files are relative to the treated file. Alternate search path allows one to change that
 * **path**: the file path of the optimized file, the target output
+* `jsjade` or `cssjade` will output in the `.jade` templating language format, instead of regular HTML
 
 An example of this in completed form can be seen below:
 
